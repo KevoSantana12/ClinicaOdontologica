@@ -26,7 +26,7 @@ public class Cita implements Serializable {
     
     //n to 1
     @ManyToOne
-    @JoinColumn(name="id_Odontologo")
+    @JoinColumn(name="id_odontologo")
     private Odontologo odontologo;
     
     //n to 1

@@ -1,29 +1,38 @@
 package logica;
-
 import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
+@Entity
 public class Secretario extends Persona {
-    private int id_secretario;
+    @Column
     private String Sector;
+    
+    //Relacion Usuario
+    //1 to 1
+    @OneToOne
+    private Usuario usuario;
 
-    public Secretario(int id_secretario, String Sector) {
-        this.id_secretario = id_secretario;
+    public Secretario() {
+    }
+
+    public Secretario(String Sector, Usuario usuario, String nombre, int id, String apellido, String telefono, String direccion, Date fechaNacim) {
+        super(nombre, id, apellido, telefono, direccion, fechaNacim);
         this.Sector = Sector;
+        this.usuario = usuario;
     }
 
-    public Secretario(int id_secretario, String Sector, int id_Persona, String nombre, String apellido, String telefono, String direccion, Date fechaNacim) {
-        super(id_Persona, nombre, apellido, telefono, direccion, fechaNacim);
-        this.id_secretario = id_secretario;
-        this.Sector = Sector;
-    }
-
-    public int getId_secretario() {
-        return id_secretario;
-    }
-
-    public void setId_secretario(int id_secretario) {
-        this.id_secretario = id_secretario;
-    }
+//    public int getId_secretario() {
+//        return id_secretario;
+//    }
+//
+//    public void setId_secretario(int id_secretario) {
+//        this.id_secretario = id_secretario;
+//    }
 
     public String getSector() {
         return Sector;
@@ -32,6 +41,13 @@ public class Secretario extends Persona {
     public void setSector(String Sector) {
         this.Sector = Sector;
     }
-    
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
     
 }
