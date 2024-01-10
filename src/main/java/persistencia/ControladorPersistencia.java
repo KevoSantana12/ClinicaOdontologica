@@ -46,62 +46,62 @@ public class ControladorPersistencia {
     
     
     //OdontologoJpaController
-//    OdontologoJpaController OdontoJPA = new OdontologoJpaController();
-//    public void crearOdontologo(Odontologo odon){
-//        OdontoJPA.create(odon);
-//    }
-//    public void eliminarOdonto(int id){
-//        try {
-//            OdontoJPA.destroy(id);
-//        } catch (NonexistentEntityException ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public void editOdonto(Odontologo odonto){
-//        try {
-//            OdontoJPA.edit(odonto);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public Odontologo findOdonto(int id){
-//        return OdontoJPA.findOdontologo(id);
-//    }
-//    public ArrayList<Odontologo> findOdontologos(){
-//        List<Odontologo> Lista = OdontoJPA.findOdontologoEntities();
-//        ArrayList<Odontologo> AR = new ArrayList<>(Lista);
-//        return AR;
-//    }
+    OdontologoJpaController OdontoJPA = new OdontologoJpaController();
+    public void crearOdontologo(Odontologo odon){
+        OdontoJPA.create(odon);
+    }
+    public void eliminarOdonto(int id){
+        try {
+            OdontoJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void editOdonto(Odontologo odonto){
+        try {
+            OdontoJPA.edit(odonto);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public Odontologo findOdonto(int id){
+        return OdontoJPA.findOdontologo(id);
+    }
+    public ArrayList<Odontologo> findOdontologos(){
+        List<Odontologo> Lista = OdontoJPA.findOdontologoEntities();
+        ArrayList<Odontologo> AR = new ArrayList<>(Lista);
+        return AR;
+    }
     //----------------------------------------------------------------------//
     
     
     //HorarioJpaController
-//    HorarioJpaController HorarioJPA = new HorarioJpaController();
-//    public void crearHorario(Horario horario){
-//        HorarioJPA.create(horario);
-//    }
-//    public void eliminarHorario(int id){
-//        try {
-//            HorarioJPA.destroy(id);
-//        } catch (NonexistentEntityException ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public void editHorario(Horario horario){
-//        try {
-//            HorarioJPA.edit(horario);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public Horario findHorario(int id){
-//        return HorarioJPA.findHorario(id);
-//    }
-//    public ArrayList<Horario> findHorarios(){
-//        List<Horario> Lista = HorarioJPA.findHorarioEntities();
-//        ArrayList<Horario> AR = new ArrayList<>(Lista);
-//        return AR;
-//    }
+    HorarioJpaController HorarioJPA = new HorarioJpaController();
+    public void crearHorario(Horario horario){
+        HorarioJPA.create(horario);
+    }
+    public void eliminarHorario(int id){
+        try {
+            HorarioJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void editHorario(Horario horario){
+        try {
+            HorarioJPA.edit(horario);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public Horario findHorario(int id){
+        return HorarioJPA.findHorario(id);
+    }
+    public ArrayList<Horario> findHorarios(){
+        List<Horario> Lista = HorarioJPA.findHorarioEntities();
+        ArrayList<Horario> AR = new ArrayList<>(Lista);
+        return AR;
+    }
     //----------------------------------------------------------------------//
     
     //PacienteJpaController 

@@ -21,33 +21,33 @@ public class ControladoraLogica {
    //----------------------------------------------------------------------//
 
     //Horario Crud
-//    public void crearHorario(Horario horario){
-//        ControlPersis.crearHorario(horario);
-//    }
-//    public void eliminarHorario(int id){
-//        ControlPersis.eliminarHorario(id);
-//    }
-//    public Horario findHorario(int id){
-//        return ControlPersis.findHorario(id);
-//    }
-//    public ArrayList<Horario> findHorarios(){
-//        return ControlPersis.findHorarios();
-//   }
+    public void crearHorario(Horario horario){
+        ControlPersis.crearHorario(horario);
+    }
+    public void eliminarHorario(int id){
+        ControlPersis.eliminarHorario(id);
+    }
+    public Horario findHorario(int id){
+        return ControlPersis.findHorario(id);
+    }
+    public ArrayList<Horario> findHorarios(){
+        return ControlPersis.findHorarios();
+   }
    //----------------------------------------------------------------------//
     
    //Odontologo CRUD
-//    public void crearOdontologo(Odontologo odonto){
-//        ControlPersis.crearOdontologo(odonto);
-//    }
-//    public void eliminarOdontologo(int id){
-//        ControlPersis.eliminarOdonto(id);
-//    }
-//    public Odontologo find(int id){
-//        return ControlPersis.findOdonto(id);
-//    }
-//    public ArrayList<Odontologo> findOdontologos(){
-//        return ControlPersis.findOdontologos();
-//   }
+    public void crearOdontologo(Odontologo odonto){
+        ControlPersis.crearOdontologo(odonto);
+    }
+    public void eliminarOdontologo(int id){
+        ControlPersis.eliminarOdonto(id);
+    }
+    public Odontologo find(int id){
+        return ControlPersis.findOdonto(id);
+    }
+    public ArrayList<Odontologo> findOdontologos(){
+        return ControlPersis.findOdontologos();
+   }
    //----------------------------------------------------------------------//
 
    //Paciente CRUD
@@ -103,6 +103,10 @@ public class ControladoraLogica {
     public void eliminarUsuario(int id){
         ControlPersis.eliminarUsuario(id);
     }
+    public void editarUsuario(Usuario usu){
+        ControlPersis.editUsuario(usu);
+    }
+            
     public Usuario findUsuario(int id){
         return ControlPersis.findUsuario(id);
     }

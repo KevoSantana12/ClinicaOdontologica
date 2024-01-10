@@ -11,7 +11,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.jsp">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-light fa-tooth"></i>
                 </div>
@@ -47,7 +47,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Accciones: </h6>
                         <a class="collapse-item" href="">Ver Odontologos</a>
-                        <a class="collapse-item" href="altaOdontologos.jsp">Agregar Odontologo</a>
+                        <a class="collapse-item" href="ServletOdontologo">Agregar Odontologo</a>
                     </div>
                 </div>
             </li>
@@ -85,6 +85,22 @@
                 </div>
             </li>            
 
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHorario"
+                    aria-expanded="true" aria-controls="collapseHorario">
+                    <i class="fas fa-clock"></i>
+                    <span>Horarios</span>
+                </a>
+                <div id="collapseHorario" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Acciones: </h6>
+                        <a class="collapse-item" href="">Ver Horarios</a>
+                        <a class="collapse-item" href="altaHorario.jsp">Agregar Horarios</a>                        
+                    </div>
+                </div>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 

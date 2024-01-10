@@ -35,6 +35,7 @@
                                             <th>Id Usuario</th>
                                             <th>Nombre Usuario</th>
                                             <th>Rol</th>
+                                            <th style="width: 210px">Accion</th>                                            
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -42,14 +43,32 @@
                                             <th>Id Usuario</th>
                                             <th>Nombre Usuario</th>
                                             <th>Rol</th>
+                                            <th style="width: 210px">Accion</th>                                            
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                        <%for(Usuario usuario : usuarios) { %>
+                                        
+                                        <%for(Usuario usuario : usuarios) { 
+                                        %>
                                         <tr>
                                             <td><%=usuario.getId_usuario()%></td>
                                             <td><%=usuario.getNombreUsuario()%></td>
                                             <td><%=usuario.getRol()%></td>
+                                            <td style="display: flex; width: 230px;">
+                                                <form name= "editar" action="ServletUsuarioEditar" method="GET">
+                                                        <button type="submit" style="background-color: #4e73df; margin-right: 5px;"> 
+                                                            <i class="fas fa-trash-alt">Editar</i>    
+                                                        </button>                                                    
+                                                    <input type="hidden" name="Editar" value="<%=usuario.getId_usuario()%>">
+                                                </form>
+                                                
+                                                <form name= "eliminar" action="ServletUsuarioEliminar" method="POST">
+                                                        <button type="submit" style="background-color: #e74a3b; margin-right: 5px;"> 
+                                                            <i class="fas fa-pencil-alt">Eliminar</i>    
+                                                        </button>                                                    
+                                                    <input type="hidden" name="Eliminar" value="<%=usuario.getId_usuario()%>">
+                                                </form>                                                
+                                            </td>
                                         </tr>
                                         <%}%>
                                     </tbody>
