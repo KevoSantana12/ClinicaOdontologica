@@ -45,54 +45,60 @@ public class ControladoraLogica {
     public Odontologo find(int id){
         return ControlPersis.findOdonto(id);
     }
+    public void editarOdontologo(Odontologo odonto){
+        ControlPersis.editarOdonto(odonto);
+    }
     public ArrayList<Odontologo> findOdontologos(){
         return ControlPersis.findOdontologos();
    }
    //----------------------------------------------------------------------//
 
    //Paciente CRUD
-//    public void crearPaciente(Paciente paciente){
-//        ControlPersis.crearPaciente(paciente);
-//    }
-//    public void eliminarPaciente(int id){
-//        ControlPersis.eliminarPaciente(id);
-//    }
-//    public Paciente findPaciente(int id){
-//        return ControlPersis.findPaciente(id);
-//    }
-//    public ArrayList<Paciente> findPaciente(){
-//        return ControlPersis.findPacientes();
-//   }
+    public void crearPaciente(Paciente paciente){
+        ControlPersis.crearPaciente(paciente);
+    }
+    public void eliminarPaciente(int id){
+        ControlPersis.eliminarPaciente(id);
+    }
+    public Paciente findPaciente(int id){
+        return ControlPersis.findPaciente(id);
+    }
+    public ArrayList<Paciente> findPaciente(){
+        return ControlPersis.findPacientes();
+   }
    //----------------------------------------------------------------------//
     
    //Responsable CRUD
-//    public void crearResponsable(Responsable responsable){
-//        ControlPersis.crearResponsable(responsable);
-//    }
-//    public void eliminarResponsable(int id){
-//        ControlPersis.eliminarResponsable(id);
-//    }
-//    public Responsable findResponsable(int id){
-//        return ControlPersis.findResponsable(id);
-//    }
-//    public ArrayList<Responsable> findResponsables(){
-//        return ControlPersis.findResponsables();
-//   }
+    public void crearResponsable(Responsable responsable){
+        ControlPersis.crearResponsable(responsable);
+    }
+    public void eliminarResponsable(int id){
+        ControlPersis.eliminarResponsable(id);
+    }
+    public void editarResponsable(Responsable respo){
+        ControlPersis.editResponsable(respo);
+    }
+    public Responsable findResponsable(int id){
+        return ControlPersis.findResponsable(id);
+    }
+    public ArrayList<Responsable> findResponsables(){
+        return ControlPersis.findResponsables();
+   }
    //----------------------------------------------------------------------//
 
    //Secretario CRUD
-//    public void crearSecretario(Secretario secretario){
-//        ControlPersis.crearSecretario(secretario);
-//    }
-//    public void eliminarSecretario(int id){
-//        ControlPersis.eliminarSecretario(id);
-//    }
-//    public Secretario findSecretario(int id){
-//        return ControlPersis.findSecretario(id);
-//    }
-//    public ArrayList<Secretario> findSecretarios(){
-//        return ControlPersis.findSecretarios();
-//   }
+    public void crearSecretario(Secretario secretario){
+        ControlPersis.crearSecretario(secretario);
+    }
+    public void eliminarSecretario(int id){
+        ControlPersis.eliminarSecretario(id);
+    }
+    public Secretario findSecretario(int id){
+        return ControlPersis.findSecretario(id);
+    }
+    public ArrayList<Secretario> findSecretarios(){
+        return ControlPersis.findSecretarios();
+   }
    //----------------------------------------------------------------------//  
     
     

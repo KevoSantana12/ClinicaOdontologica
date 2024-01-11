@@ -57,7 +57,7 @@ public class ControladorPersistencia {
             Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    public void editOdonto(Odontologo odonto){
+    public void editarOdonto(Odontologo odonto){
         try {
             OdontoJPA.edit(odonto);
         } catch (Exception ex) {
@@ -105,32 +105,32 @@ public class ControladorPersistencia {
     //----------------------------------------------------------------------//
     
     //PacienteJpaController 
-//    PacienteJpaController PacienteJPA = new PacienteJpaController();
-//    public void crearPaciente(Paciente paciente){
-//        PacienteJPA.create(paciente);
-//    }
-//    public void eliminarPaciente(int id){
-//        try {
-//            PacienteJPA.destroy(id);
-//        } catch (NonexistentEntityException ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public void editPaciente(Paciente paciente){
-//        try {
-//            PacienteJPA.edit(paciente);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public Paciente findPaciente(int id){
-//        return PacienteJPA.findPaciente(id);
-//    }
-//    public ArrayList<Paciente> findPacientes(){
-//        List<Paciente> Lista = PacienteJPA.findPacienteEntities();
-//        ArrayList<Paciente> AR = new ArrayList<>(Lista);
-//        return AR;
-//    }
+    PacienteJpaController PacienteJPA = new PacienteJpaController();
+    public void crearPaciente(Paciente paciente){
+        PacienteJPA.create(paciente);
+    }
+    public void eliminarPaciente(int id){
+        try {
+            PacienteJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void editPaciente(Paciente paciente){
+        try {
+            PacienteJPA.edit(paciente);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public Paciente findPaciente(int id){
+        return PacienteJPA.findPaciente(id);
+    }
+    public ArrayList<Paciente> findPacientes(){
+        List<Paciente> Lista = PacienteJPA.findPacienteEntities();
+        ArrayList<Paciente> AR = new ArrayList<>(Lista);
+        return AR;
+    }
     //----------------------------------------------------------------------//
 
     
@@ -140,61 +140,61 @@ public class ControladorPersistencia {
 //    //----------------------------------------------------------------------//
 //    
 //    //ResponsableJpaController
-//    ResponsableJpaController RespoJPA = new ResponsableJpaController();
-//    public void crearResponsable(Responsable responsable){
-//        RespoJPA.create(responsable);
-//    }
-//    public void eliminarResponsable(int id){
-//        try {
-//            RespoJPA.destroy(id);
-//        } catch (NonexistentEntityException ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public void editResponsable(Responsable responsable){
-//        try {
-//            RespoJPA.edit(responsable);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public Responsable findResponsable(int id){
-//        return RespoJPA.findResponsable(id);
-//    }
-//    public ArrayList<Responsable> findResponsables(){
-//        List<Responsable> Lista = RespoJPA.findResponsableEntities();
-//        ArrayList<Responsable> AR = new ArrayList<>(Lista);
-//        return AR;
-//    }
+    ResponsableJpaController RespoJPA = new ResponsableJpaController();
+    public void crearResponsable(Responsable responsable){
+        RespoJPA.create(responsable);
+    }
+    public void eliminarResponsable(int id){
+        try {
+            RespoJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void editResponsable(Responsable responsable){
+        try {
+            RespoJPA.edit(responsable);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public Responsable findResponsable(int id){
+        return RespoJPA.findResponsable(id);
+    }
+    public ArrayList<Responsable> findResponsables(){
+        List<Responsable> Lista = RespoJPA.findResponsableEntities();
+        ArrayList<Responsable> AR = new ArrayList<>(Lista);
+        return AR;
+    }
     //----------------------------------------------------------------------//
     
     //SecretarioJpaController
-//    SecretarioJpaController SecJPA = new SecretarioJpaController();
-//    public void crearSecretario(Secretario secre){
-//        SecJPA.create(secre);
-//    }
-//    public void eliminarSecretario(int id){
-//        try {
-//            SecJPA.destroy(id);
-//        } catch (NonexistentEntityException ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public void editSecretario(Secretario secre){
-//        try {
-//            SecJPA.edit(secre);
-//        } catch (Exception ex) {
-//            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-//    public Secretario findSecretario(int id){
-//        return SecJPA.findSecretario(id);
-//    }
-//    public ArrayList<Secretario> findSecretarios(){
-//        List<Secretario> Lista = SecJPA.findSecretarioEntities();
-//        ArrayList<Secretario> AR = new ArrayList<>(Lista);
-//        return AR;
-//    }
+    SecretarioJpaController SecJPA = new SecretarioJpaController();
+    public void crearSecretario(Secretario secre){
+        SecJPA.create(secre);
+    }
+    public void eliminarSecretario(int id){
+        try {
+            SecJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public void editSecretario(Secretario secre){
+        try {
+            SecJPA.edit(secre);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladorPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    public Secretario findSecretario(int id){
+        return SecJPA.findSecretario(id);
+    }
+    public ArrayList<Secretario> findSecretarios(){
+        List<Secretario> Lista = SecJPA.findSecretarioEntities();
+        ArrayList<Secretario> AR = new ArrayList<>(Lista);
+        return AR;
+    }
     //----------------------------------------------------------------------//
     
     

@@ -46,7 +46,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Accciones: </h6>
-                        <a class="collapse-item" href="">Ver Odontologos</a>
+                        <a class="collapse-item" href="ServletOdontologoVer">Ver Odontologos</a>
                         <a class="collapse-item" href="ServletOdontologo">Agregar Odontologo</a>
                     </div>
                 </div>
@@ -63,8 +63,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Acciones: </h6>
-                        <a class="collapse-item" href="">Ver Pacientes</a>
-                        <a class="collapse-item" href="altasPacientes.jsp">Agregar Pacientes</a>                        
+                        <a class="collapse-item" href="ServletPacienteVer">Ver Pacientes</a>
+                        <a class="collapse-item" href="ServletPaciente">Agregar Pacientes</a>                        
                     </div>
                 </div>
             </li>
@@ -81,6 +81,22 @@
                         <h6 class="collapse-header">Acciones: </h6>
                         <a class="collapse-item" href="ServletUsuario">Ver Usuarios</a>
                         <a class="collapse-item" href="altaUsuarios.jsp">Agregar Usuarios</a>                        
+                    </div>
+                </div>
+            </li> 
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecretario"
+                    aria-expanded="true" aria-controls="collapseSecretario">
+                    <i class="fas fa-solid fa-users"></i>
+                    <span>Secretario</span>
+                </a>
+                <div id="collapseSecretario" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Acciones: </h6>
+                        <a class="collapse-item" href="ServletSecretarioVer">Ver Secretarios</a>
+                        <a class="collapse-item" href="ServletSecretario">Agregar Secretario</a>                        
                     </div>
                 </div>
             </li>            
@@ -103,6 +119,22 @@
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseResponsable"
+                    aria-expanded="true" aria-controls="collapseResponsable">
+                    <i class="fas fa-solid fa-users"></i>
+                    <span>Responsables</span>
+                </a>
+                <div id="collapseResponsable" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Acciones: </h6>
+                        <a class="collapse-item" href="ServletResponsable">Ver Responsables</a>
+                        <a class="collapse-item" href="altaResponsable.jsp">Agregar Responsables</a>                        
+                    </div>
+                </div>
+            </li>            
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
